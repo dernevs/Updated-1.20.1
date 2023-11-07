@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "cracked_nether_brick_stairs",
+  "ingredient": {
+    "item": "minecraft:nether_brick_stairs"
+  },
+  "result": "updated:cracked_nether_brick_stairs"
+}

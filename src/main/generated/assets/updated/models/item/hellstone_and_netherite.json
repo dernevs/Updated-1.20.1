@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "updated:item/hellstone_and_netherite"
+  }
+}

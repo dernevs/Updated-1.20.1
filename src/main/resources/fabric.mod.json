@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "updated",
-	"version": "${version}",
+	"version": "0.0.1",
 	"name": "Updated",
 	"description": "Updates parts of minecraft",
 	"authors": [

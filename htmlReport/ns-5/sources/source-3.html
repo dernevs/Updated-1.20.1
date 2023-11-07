@@ -1,0 +1,123 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > VenomSwordItem</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.dernevs.updated.item.custom</a>
+</div>
+
+<h1>Coverage Summary for Class: VenomSwordItem (net.dernevs.updated.item.custom)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">VenomSwordItem</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/3)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package net.dernevs.updated.item.custom;
+&nbsp;
+&nbsp;import net.minecraft.entity.LivingEntity;
+&nbsp;import net.minecraft.entity.effect.StatusEffectInstance;
+&nbsp;import net.minecraft.entity.effect.StatusEffects;
+&nbsp;import net.minecraft.item.ItemStack;
+&nbsp;import net.minecraft.item.SwordItem;
+&nbsp;import net.minecraft.item.ToolMaterial;
+&nbsp;
+&nbsp;public class VenomSwordItem extends SwordItem {
+&nbsp;    public VenomSwordItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+<b class="nc">&nbsp;        super(toolMaterial, attackDamage, attackSpeed, settings);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+<b class="nc">&nbsp;        target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 300,0), attacker);</b>
+<b class="nc">&nbsp;        return super.postHit(stack, target, attacker);</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-08-13 20:31</div>
+</div>
+</body>
+</html>

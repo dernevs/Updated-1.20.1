@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:iron_ingot"
+  },
+  "base": {
+    "item": "updated:damaged_chestplate"
+  },
+  "result": {
+    "item": "minecraft:iron_chestplate"
+  },
+  "template": {
+    "item": "updated:repair_template"
+  }
+}

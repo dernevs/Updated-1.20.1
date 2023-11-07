@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "updated:cracked_stone_brick_wall",
+    "updated:stone_wall",
+    "updated:smooth_stone_wall",
+    "updated:cracked_polish_blackstone_brick_wall",
+    "updated:quartz_brick_wall",
+    "updated:smooth_quartz_wall",
+    "updated:purpur_wall",
+    "updated:polished_granite_wall",
+    "updated:polished_diorite_wall",
+    "updated:polished_andesite_wall",
+    "updated:cracked_nether_brick_wall",
+    "updated:smooth_red_sandstone_wall",
+    "updated:prismarine_brick_wall",
+    "updated:smooth_sandstone_wall",
+    "updated:gilded_blackstone_wall",
+    "updated:dark_prismarine_wall"
+  ]
+}

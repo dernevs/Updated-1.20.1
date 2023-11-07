@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:diamond"
+  },
+  "base": {
+    "item": "updated:damaged_leggings"
+  },
+  "result": {
+    "item": "minecraft:diamond_leggings"
+  },
+  "template": {
+    "item": "updated:repair_template"
+  }
+}

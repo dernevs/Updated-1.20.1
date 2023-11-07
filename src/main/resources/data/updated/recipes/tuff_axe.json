@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " AA",
+    " BA",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:tuff"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "updated:tuff_axe"
+  }
+}

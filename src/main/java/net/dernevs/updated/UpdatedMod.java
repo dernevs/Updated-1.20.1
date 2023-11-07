@@ -1,5 +1,12 @@
 package net.dernevs.updated;
 
+import net.dernevs.updated.block.ModBlocks;
+import net.dernevs.updated.block.entity.ModBlockEntities;
+import net.dernevs.updated.item.ModItemGroup;
+import net.dernevs.updated.item.ModItems;
+import net.dernevs.updated.recipe.ModRecipes;
+import net.dernevs.updated.screen.ModScreenHandlers;
+import net.dernevs.updated.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +18,13 @@ public class UpdatedMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroup.registerItemGroups();
+
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModRegistries.registerModThingies();
+		ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
+		ModRecipes.registerRecipes();
 	}
 }

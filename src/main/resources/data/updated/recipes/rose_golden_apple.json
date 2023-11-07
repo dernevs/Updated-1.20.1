@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "updated:rose_gold_ingot"
+    },
+    "B": {
+      "item": "minecraft:apple"
+    }
+  },
+  "result": {
+    "item": "updated:rose_golden_apple"
+  }
+}

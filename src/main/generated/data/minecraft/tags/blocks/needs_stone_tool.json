@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "updated:andesite_iron_ore",
+    "updated:andesite_lapis_ore",
+    "updated:rose_gold_block",
+    "updated:diorite_iron_ore",
+    "updated:diorite_lapis_ore",
+    "updated:granite_iron_ore",
+    "updated:granite_lapis_ore",
+    "updated:tuff_iron_ore",
+    "updated:tuff_lapis_ore"
+  ]
+}

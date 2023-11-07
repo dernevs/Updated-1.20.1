@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:iron_ingot"
+  },
+  "base": {
+    "item": "updated:damaged_boots"
+  },
+  "result": {
+    "item": "minecraft:iron_boots"
+  },
+  "template": {
+    "item": "updated:repair_template"
+  }
+}

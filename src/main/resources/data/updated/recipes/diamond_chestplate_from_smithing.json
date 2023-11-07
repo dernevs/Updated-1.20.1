@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:diamond"
+  },
+  "base": {
+    "item": "updated:damaged_chestplate"
+  },
+  "result": {
+    "item": "minecraft:diamond_chestplate"
+  },
+  "template": {
+    "item": "updated:repair_template"
+  }
+}

@@ -1,0 +1,258 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > ModBlockTagProvider</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">net.dernevs.updated.datagen</a>
+</div>
+
+<h1>Coverage Summary for Class: ModBlockTagProvider (net.dernevs.updated.datagen)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ModBlockTagProvider</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/9)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package net.dernevs.updated.datagen;
+&nbsp;
+&nbsp;import net.dernevs.updated.block.ModBlocks;
+&nbsp;import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+&nbsp;import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+&nbsp;import net.minecraft.registry.RegistryKeys;
+&nbsp;import net.minecraft.registry.RegistryWrapper;
+&nbsp;import net.minecraft.registry.tag.BlockTags;
+&nbsp;import net.minecraft.registry.tag.TagKey;
+&nbsp;import net.minecraft.util.Identifier;
+&nbsp;
+&nbsp;import java.util.concurrent.CompletableFuture;
+&nbsp;
+&nbsp;public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
+&nbsp;    public ModBlockTagProvider(FabricDataOutput output, CompletableFuture&lt;RegistryWrapper.WrapperLookup&gt; registriesFuture) {
+<b class="nc">&nbsp;        super(output, registriesFuture);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    protected void configure(RegistryWrapper.WrapperLookup arg) {
+<b class="nc">&nbsp;        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)</b>
+<b class="nc">&nbsp;                .add(</b>
+&nbsp;
+&nbsp;                        ModBlocks.ROSE_GOLD_BLOCK,
+&nbsp;                        ModBlocks.AGO,
+&nbsp;                        ModBlocks.ACO,
+&nbsp;                        ModBlocks.AIO,
+&nbsp;                        ModBlocks.ALO,
+&nbsp;                        ModBlocks.ACOO,
+&nbsp;                        ModBlocks.ADO,
+&nbsp;                        ModBlocks.AEO,
+&nbsp;                        ModBlocks.ARO,
+&nbsp;
+&nbsp;                        ModBlocks.DGO,
+&nbsp;                        ModBlocks.DCO,
+&nbsp;                        ModBlocks.DIO,
+&nbsp;                        ModBlocks.DLO,
+&nbsp;                        ModBlocks.DCOO,
+&nbsp;                        ModBlocks.DDO,
+&nbsp;                        ModBlocks.DEO,
+&nbsp;                        ModBlocks.DRO,
+&nbsp;
+&nbsp;                        ModBlocks.GGO,
+&nbsp;                        ModBlocks.GCO,
+&nbsp;                        ModBlocks.GIO,
+&nbsp;                        ModBlocks.GLO,
+&nbsp;                        ModBlocks.GCOO,
+&nbsp;                        ModBlocks.GDO,
+&nbsp;                        ModBlocks.GEO,
+&nbsp;                        ModBlocks.GRO,
+&nbsp;
+&nbsp;                        ModBlocks.TGO,
+&nbsp;                        ModBlocks.TCO,
+&nbsp;                        ModBlocks.TIO,
+&nbsp;                        ModBlocks.TLO,
+&nbsp;                        ModBlocks.TCOO,
+&nbsp;                        ModBlocks.TDO,
+&nbsp;                        ModBlocks.TEO,
+&nbsp;                        ModBlocks.TRO,
+&nbsp;
+&nbsp;                        ModBlocks.CRACKED_STONE_BRICK_STAIRS,
+&nbsp;                        ModBlocks.CRACKED_STONE_BRICK_WALL,
+&nbsp;                        ModBlocks.CRACKED_STONE_BRICK_SLAB,
+&nbsp;                        ModBlocks.CRACKED_NETHER_BRICK_STAIRS,
+&nbsp;                        ModBlocks.CRACKED_NETHER_BRICK_SLAB,
+&nbsp;                        ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS,
+&nbsp;                        ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB,
+&nbsp;                        ModBlocks.QUARTZ_BRICK_STAIRS,
+&nbsp;                        ModBlocks.QUARTZ_BRICK_SLAB,
+&nbsp;                        ModBlocks.GILDED_BLACKSTONE_STAIRS,
+&nbsp;                        ModBlocks.GILDED_BLACKSTONE_SLAB,
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;                        ModBlocks.STONE_WALL,
+&nbsp;                        ModBlocks.SMOOTH_STONE_WALL,
+&nbsp;                        ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL,
+&nbsp;                        ModBlocks.QUARTZ_BRICK_WALL,
+&nbsp;                        ModBlocks.SMOOTH_QUARTZ_WALL,
+&nbsp;                        ModBlocks.PURPUR_WALL,
+&nbsp;                        ModBlocks.POLISHED_GRANITE_WALL,
+&nbsp;                        ModBlocks.POLISHED_DIORITE_WALL,
+&nbsp;                        ModBlocks.POLISHED_ANDESITE_WALL,
+&nbsp;                        ModBlocks.CRACKED_NETHER_BRICK_WALL,
+&nbsp;                        ModBlocks.SMOOTH_RED_SANDSTONE_WALL,
+&nbsp;                        ModBlocks.PRISMARINE_BRICK_WALL,
+&nbsp;                        ModBlocks.SMOOTH_SANDSTONE_WALL,
+&nbsp;                        ModBlocks.GILDED_BLACKSTONE_WALL,
+&nbsp;                        ModBlocks.DARK_PRISMARINE_WALL);
+&nbsp;    //getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+&nbsp;      //          .add()
+&nbsp;
+<b class="nc">&nbsp;    getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)</b>
+&nbsp;
+<b class="nc">&nbsp;            .add(</b>
+&nbsp;                    ModBlocks.AEO,
+&nbsp;                    ModBlocks.ADO,
+&nbsp;                    ModBlocks.AGO,
+&nbsp;                    ModBlocks.ARO,
+&nbsp;
+&nbsp;                    ModBlocks.DEO,
+&nbsp;                    ModBlocks.DDO,
+&nbsp;                    ModBlocks.DGO,
+&nbsp;                    ModBlocks.DRO,
+&nbsp;
+&nbsp;                    ModBlocks.GEO,
+&nbsp;                    ModBlocks.GDO,
+&nbsp;                    ModBlocks.GGO,
+&nbsp;                    ModBlocks.GRO,
+&nbsp;
+&nbsp;                    ModBlocks.TEO,
+&nbsp;                    ModBlocks.TDO,
+&nbsp;                    ModBlocks.TGO,
+&nbsp;                    ModBlocks.TRO);
+&nbsp;
+&nbsp;
+<b class="nc">&nbsp;   getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)</b>
+<b class="nc">&nbsp;                .add(</b>
+&nbsp;                        ModBlocks.AIO,
+&nbsp;                        ModBlocks.ALO,
+&nbsp;                        ModBlocks.ROSE_GOLD_BLOCK,
+&nbsp;
+&nbsp;                        ModBlocks.DIO,
+&nbsp;                        ModBlocks.DLO,
+&nbsp;
+&nbsp;                        ModBlocks.GIO,
+&nbsp;                        ModBlocks.GLO,
+&nbsp;
+&nbsp;                        ModBlocks.TIO,
+&nbsp;                        ModBlocks.TLO);
+&nbsp;
+&nbsp;
+<b class="nc">&nbsp;    getOrCreateTagBuilder(BlockTags.WALLS)</b>
+<b class="nc">&nbsp;            .add(</b>
+&nbsp;                    ModBlocks.CRACKED_STONE_BRICK_WALL,
+&nbsp;                    ModBlocks.STONE_WALL,
+&nbsp;                    ModBlocks.SMOOTH_STONE_WALL,
+&nbsp;                    ModBlocks.CRACKED_POLISHED_BLACKSTONE_BRICK_WALL,
+&nbsp;                    ModBlocks.QUARTZ_BRICK_WALL,
+&nbsp;                    ModBlocks.SMOOTH_QUARTZ_WALL,
+&nbsp;                    ModBlocks.PURPUR_WALL,
+&nbsp;                    ModBlocks.POLISHED_GRANITE_WALL,
+&nbsp;                    ModBlocks.POLISHED_DIORITE_WALL,
+&nbsp;                    ModBlocks.POLISHED_ANDESITE_WALL,
+&nbsp;                    ModBlocks.CRACKED_NETHER_BRICK_WALL,
+&nbsp;                    ModBlocks.SMOOTH_RED_SANDSTONE_WALL,
+&nbsp;                    ModBlocks.PRISMARINE_BRICK_WALL,
+&nbsp;                    ModBlocks.SMOOTH_SANDSTONE_WALL,
+&nbsp;                    ModBlocks.GILDED_BLACKSTONE_WALL,
+&nbsp;                    ModBlocks.DARK_PRISMARINE_WALL);
+&nbsp;   //Tags for Mining levels
+&nbsp;    //getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier(&quot;fabric&quot;, &quot;needs_tool_level_4&quot;)));
+&nbsp;    //getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier(&quot;fabric&quot;, &quot;needs_tool_level_5&quot;)));
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-08-13 20:31</div>
+</div>
+</body>
+</html>

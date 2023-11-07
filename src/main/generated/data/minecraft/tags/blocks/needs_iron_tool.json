@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "updated:andesite_emerald_ore",
+    "updated:andesite_diamond_ore",
+    "updated:andesite_gold_ore",
+    "updated:andesite_redstone_ore",
+    "updated:diorite_emerald_ore",
+    "updated:diorite_diamond_ore",
+    "updated:diorite_gold_ore",
+    "updated:diorite_redstone_ore",
+    "updated:granite_emerald_ore",
+    "updated:granite_diamond_ore",
+    "updated:granite_gold_ore",
+    "updated:granite_redstone_ore",
+    "updated:tuff_emerald_ore",
+    "updated:tuff_diamond_ore",
+    "updated:tuff_gold_ore",
+    "updated:tuff_redstone_ore"
+  ]
+}
