@@ -2,6 +2,7 @@ package net.dernevs.updated;
 
 import net.dernevs.updated.block.ModBlocks;
 import net.dernevs.updated.block.entity.ModBlockEntities;
+import net.dernevs.updated.enchantment.ModEnchantments;
 import net.dernevs.updated.item.ModItemGroup;
 import net.dernevs.updated.item.ModItems;
 import net.dernevs.updated.recipe.ModRecipes;
@@ -26,5 +27,6 @@ public class UpdatedMod implements ModInitializer {
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerScreenHandlers();
 		ModRecipes.registerRecipes();
+		ModEnchantments.registerModEnchanments();
 	}
 }

@@ -67,7 +67,13 @@ public enum ModArmorMaterial implements ArmorMaterial {
         map.put(ArmorItem.Type.LEGGINGS, 2);
         map.put(ArmorItem.Type.CHESTPLATE, 2);
         map.put(ArmorItem.Type.HELMET, 1);
-    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.ofItems(Items.IRON_INGOT));
+    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.ofItems(Items.IRON_INGOT)),
+    PLATED_IRON("plated_iron", 15, Util.make(new EnumMap(ArmorItem.Type.class), map -> {
+        map.put(ArmorItem.Type.BOOTS, 2);
+        map.put(ArmorItem.Type.LEGGINGS, 5);
+        map.put(ArmorItem.Type.CHESTPLATE, 6);
+        map.put(ArmorItem.Type.HELMET, 2);
+    }), 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1f, 0.05f, () -> Ingredient.ofItems(ModItems.IRON_PLATES));
 
 
     public static final StringIdentifiable.Codec<ArmorMaterials> CODEC;

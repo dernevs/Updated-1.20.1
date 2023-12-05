@@ -119,6 +119,11 @@
 
   "item.updated.heart_gem.max.use": "You have reached the maximum amount of health",
 
+  "enchantment.updated.thunder_strike": "Thunder Strike",
+  "enchantment.updated.life_steal": "Life Steal",
+  "enchantment.updated.wither_heart": "Wither Heart",
+  "enchantment.updated.berserk": "Berserk",
+
   "ModAdvancement.Text.Root.title": "Welcome To The Mod",
   "ModAdvancement.Text.Root.description": "These Advancements Will Guide You Through The Mod",
   "ModAdvancement.Text.why.title": "WHY?!",

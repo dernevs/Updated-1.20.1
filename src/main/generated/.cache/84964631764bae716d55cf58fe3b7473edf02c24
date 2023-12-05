@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-06T20:30:58.6014758	Updated/Block Loot Tables
+// 1.20	2023-12-04T21:36:24.6104853	Updated/Block Loot Tables
 55f512dd7487c5c7e83bd2d72c9db0e7149d9d9f data\updated\loot_tables\blocks\quartz_brick_stairs.json
 67fa85cbb4953aa4d96debd783fb3816b7411cdc data\updated\loot_tables\blocks\rose_gold_block.json
 aa4e19d5b1c515cc70e298badd0150910856fb57 data\updated\loot_tables\blocks\diorite_iron_ore.json
@@ -13,8 +13,8 @@ c8d43a6209eba2ca679d83ec063612441b95467e data\updated\loot_tables\blocks\andesit
 0c5ed59c8f6e45dce36cd431d3b1901bccea62a8 data\updated\loot_tables\blocks\tuff_redstone_ore.json
 3a12523f44510544475751ef5e031924ab96640f data\updated\loot_tables\blocks\smooth_stone_stairs.json
 e6349d2fba3acf40669e6805696f8a72799c5414 data\updated\loot_tables\blocks\granite_iron_ore.json
-77ce3fa4f062a38102c9b6145e6fe00c16cc1a46 data\updated\loot_tables\blocks\purpur_wall.json
 0507e5a4c0c93c5b1535f81c4387649d86810696 data\updated\loot_tables\blocks\smooth_stone_wall.json
+77ce3fa4f062a38102c9b6145e6fe00c16cc1a46 data\updated\loot_tables\blocks\purpur_wall.json
 35633074e53a7b40bf14b5a618ff3e6911c4e267 data\updated\loot_tables\blocks\stone_wall.json
 e9342ef757d56c45541a2d5a671fde1963ead37a data\updated\loot_tables\blocks\diorite_copper_ore.json
 e215c17006a5f195538ebb957ccae1322c87a5f8 data\updated\loot_tables\blocks\alchemy_table.json
@@ -45,8 +45,8 @@ a6002b17492c4794024b510dd797dff4161561c1 data\updated\loot_tables\blocks\quartz_
 9ca7b5a6e3e864d9c077164c883b371be9310d87 data\updated\loot_tables\blocks\smooth_red_sandstone_wall.json
 46f21358490611f8f9c4eaf8e8a798c05af3e57c data\updated\loot_tables\blocks\cracked_nether_brick_stairs.json
 0d83400035f9268085b91e8b443b92f187997b4c data\updated\loot_tables\blocks\diorite_coal_ore.json
-a45fec8b464f84b98be30554dc0b764c10ac3612 data\updated\loot_tables\blocks\cut_sandstone_stairs.json
 5635924d265834f737764851b5b13119f7a2f2d1 data\updated\loot_tables\blocks\tuff_diamond_ore.json
+a45fec8b464f84b98be30554dc0b764c10ac3612 data\updated\loot_tables\blocks\cut_sandstone_stairs.json
 acc87c6cad632aaa6d682e425ecae1ab62cb1bdc data\updated\loot_tables\blocks\smooth_sandstone_wall.json
 9c4776c2e40632af02dd19e1510d4343da987fb7 data\updated\loot_tables\blocks\andesite_redstone_ore.json
 b57783ee2e4d588105f117aaf1ee2847f75361aa data\updated\loot_tables\blocks\polished_andesite_wall.json

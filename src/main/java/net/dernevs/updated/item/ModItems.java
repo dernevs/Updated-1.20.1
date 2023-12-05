@@ -95,6 +95,16 @@ public class ModItems {
             new ShieldItem(new FabricItemSettings().maxDamage(350)));
     public static final Item ENDER_TRANSPORTER = registerItem("ender_transporter",
             new EnderTransporterItem(new FabricItemSettings().maxCount(1).maxDamage(16)));
+    public static final Item IRON_PLATES = registerItem("iron_plates",
+            new Item(new FabricItemSettings()));
+    public static final Item PLATED_IRON_HELMET = registerItem("plated_iron_helmet",
+            new ArmorItem(ModArmorMaterial.PLATED_IRON, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item PLATED_IRON_CHESTPLATE = registerItem("plated_iron_chestplate",
+            new ArmorItem(ModArmorMaterial.PLATED_IRON, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item PLATED_IRON_LEGGINGS = registerItem("plated_iron_leggings",
+            new ArmorItem(ModArmorMaterial.PLATED_IRON, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item PLATED_IRON_BOOTS = registerItem("plated_iron_boots",
+            new ArmorItem(ModArmorMaterial.PLATED_IRON, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     public static final Item ROSE_GOLD_CREWMATE = registerItem("rose_gold_crewmate",
             new Item(new Item.Settings().maxCount(1)));
     private static Item registerItem(String name, Item item) {

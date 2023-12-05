@@ -24,32 +24,31 @@ public class EnderTransporterItem extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack stack = user.getStackInHand(hand);
-        if (user.isSneaking() && !world.isClient){}
-                double x1 = user.getX();
-                double y1 = user.getY();
-                double z1 = user.getZ();
+        if (user.isSneaking() && !world.isClient){
+                double x = user.getX();
+                double y = user.getY();
+                double z = user.getZ();
 
                 int damage =stack.getDamage();
-                x1 = Math.round(x1);
-                y1 = Math.round(y1);
-                z1 = Math.round(z1);
+                x = Math.round(x);
+                y = Math.round(y);
+                z = Math.round(z);
 
                 NbtCompound nbtData = new NbtCompound();
-                if (world.getDimension().bedWorks() && !world.getDimension().respawnAnchorWorks()){
-                    nbtData.putDouble("updated.ender_transporter.saved.coordinate.x1", x1);
-                    nbtData.putDouble("updated.ender_transporter.saved.coordinate.y1", y1);
-                    nbtData.putDouble("updated.ender_transporter.saved.coordinate.z1", z1);
-                }
+                nbtData.putDouble("updated.ender_transporter.saved.coordinate.x1", x);
+                nbtData.putDouble("updated.ender_transporter.saved.coordinate.y1", y);
+                nbtData.putDouble("updated.ender_transporter.saved.coordinate.z1", z);
                 stack.setNbt(nbtData);
                 stack.setDamage(damage);
+        }
 
-            if (!user.isSneaking()){
-                double x = stack.getNbt().getDouble("updated.ender_transporter.saved.coordinate.x1");
-                double y = stack.getNbt().getDouble("updated.ender_transporter.saved.coordinate.y1");
-                double z = stack.getNbt().getDouble("updated.ender_transporter.saved.coordinate.z1");
-                user.teleport(x,y,z);
+        if (!user.isSneaking()){
+                double xpos = stack.getNbt().getDouble("updated.ender_transporter.saved.coordinate.x1");
+                double ypos = stack.getNbt().getDouble("updated.ender_transporter.saved.coordinate.y1");
+                double zpos = stack.getNbt().getDouble("updated.ender_transporter.saved.coordinate.z1");
+                user.teleport(xpos,ypos,zpos);
                 stack.damage(1, user, p -> p.sendToolBreakStatus(hand));
-            }
+        }
 
         return super.use(world, user, hand);
     }

@@ -43,7 +43,7 @@ public class AlchemyTableRecipe implements Recipe<SimpleInventory> {
                 //potion vials
                 recipeItems.get(12).test(inventory.getStack(12)) &&
                 recipeItems.get(13).test(inventory.getStack(13)) &&
-                recipeItems.get(13).test(inventory.getStack(14));
+                recipeItems.get(14).test(inventory.getStack(14));
     }
 
     @Override
@@ -96,7 +96,7 @@ public class AlchemyTableRecipe implements Recipe<SimpleInventory> {
             ItemStack output = ShapedRecipe.outputFromJson(JsonHelper.getObject(json, "output"));
 
             JsonArray ingredients = JsonHelper.getArray(json, "ingredients");
-            DefaultedList<Ingredient> inputs = DefaultedList.ofSize(1, Ingredient.EMPTY); //might have to increase size idk tho lol
+            DefaultedList<Ingredient> inputs = DefaultedList.ofSize(12, Ingredient.EMPTY); //might have to increase size idk tho lol
 
             for (int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));

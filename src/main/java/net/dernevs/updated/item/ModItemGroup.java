@@ -124,6 +124,11 @@ public class ModItemGroup {
                         entries.add(ModItems.DAMAGED_CHESTPLATE);
                         entries.add(ModItems.DAMAGED_LEGGINGS);
                         entries.add(ModItems.DAMAGED_BOOTS);
+                        entries.add(ModItems.IRON_PLATES);
+                        entries.add(ModItems.PLATED_IRON_HELMET);
+                        entries.add(ModItems.PLATED_IRON_CHESTPLATE);
+                        entries.add(ModItems.PLATED_IRON_LEGGINGS);
+                        entries.add(ModItems.PLATED_IRON_BOOTS);
 
                         entries.add(ModItems.VENOM_SWORD);
                         entries.add(ModItems.REPAIR_TEMPLATE);

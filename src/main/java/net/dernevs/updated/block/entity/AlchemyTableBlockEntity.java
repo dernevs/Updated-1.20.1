@@ -39,9 +39,11 @@ public class AlchemyTableBlockEntity extends BlockEntity implements ExtendedScre
     private static final int INPUT_SLOT7 = 7;
     private static final int INPUT_SLOT8 = 8;
     private static final int OUTPUT_SLOT = 9;
-    //private static final int FLUID_ITEM_SLOT = 1;
-    //private static final int OUTPUT_SLOT = 2;
-    //private static final int ENERGY_ITEM_SLOT = 3;
+    private static final int FUEL_SLOT = 10;
+    private static final int INGREDIENT_SLOT = 11;
+    private static final int VIAL_SLOT = 12;
+    private static final int VIAL_SLOT2 = 13;
+    private static final int VIAL_SLOT3 = 14;
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
     private int maxProgress = 72;
@@ -130,6 +132,14 @@ public class AlchemyTableBlockEntity extends BlockEntity implements ExtendedScre
         Optional<AlchemyTableRecipe> recipe = getCurrentRecipe();
 
         this.removeStack(INPUT_SLOT, 1);
+        this.removeStack(INPUT_SLOT1, 1);
+        this.removeStack(INPUT_SLOT2, 1);
+        this.removeStack(INPUT_SLOT3, 1);
+        this.removeStack(INPUT_SLOT4, 1);
+        this.removeStack(INPUT_SLOT5, 1);
+        this.removeStack(INPUT_SLOT6, 1);
+        this.removeStack(INPUT_SLOT7, 1);
+        this.removeStack(INPUT_SLOT8, 1);
         this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().getOutput(null).getItem(),
                 this.getStack(OUTPUT_SLOT).getCount() + recipe.get().getOutput(null).getCount()));
     }
