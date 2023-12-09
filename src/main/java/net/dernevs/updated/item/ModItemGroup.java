@@ -125,15 +125,25 @@ public class ModItemGroup {
                         entries.add(ModItems.DAMAGED_LEGGINGS);
                         entries.add(ModItems.DAMAGED_BOOTS);
                         entries.add(ModItems.IRON_PLATES);
+                        /*
                         entries.add(ModItems.PLATED_IRON_HELMET);
                         entries.add(ModItems.PLATED_IRON_CHESTPLATE);
                         entries.add(ModItems.PLATED_IRON_LEGGINGS);
                         entries.add(ModItems.PLATED_IRON_BOOTS);
+                         */
 
                         entries.add(ModItems.VENOM_SWORD);
                         entries.add(ModItems.REPAIR_TEMPLATE);
                         entries.add(ModItems.NETHERITE_HORSE_ARMOR);
                         entries.add(ModItems.GLASS_VILE);
+                        entries.add(ModItems.WHISKEY_GLASS);
+                        entries.add(ModItems.FILLED_WHISKEY_GLASS);
+                        entries.add(ModItems.WHISKEY_BOTTLE);
+                        entries.add(ModItems.WINE_GLASS);
+                        entries.add(ModItems.FILLED_RED_WINE_GLASS);
+                        entries.add(ModItems.FILLED_WHITE_WINE_GLASS);
+                        entries.add(ModItems.RED_WINE_BOTTLE);
+                        entries.add(ModItems.WHITE_WINE_BOTTLE);
 
                     }).build());
     public static final ItemGroup MOD_GROUP2 = Registry.register(Registries.ITEM_GROUP,

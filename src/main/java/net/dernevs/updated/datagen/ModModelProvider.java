@@ -164,10 +164,21 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.HELLSTONE_AND_NETHERITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ROSE_GOLD_CREWMATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_PLATES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WHISKEY_GLASS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FILLED_WHISKEY_GLASS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WHISKEY_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WINE_GLASS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_WINE_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FILLED_RED_WINE_GLASS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WHITE_WINE_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FILLED_WHITE_WINE_GLASS, Models.GENERATED);
+        /*
         itemModelGenerator.register(ModItems.PLATED_IRON_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLATED_IRON_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLATED_IRON_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLATED_IRON_BOOTS, Models.GENERATED);
+
+         */
 
         itemModelGenerator.register(ModItems.VENOM_SWORD, Models.HANDHELD);
 

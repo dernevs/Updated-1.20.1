@@ -1,8 +1,12 @@
 package net.dernevs.updated;
 
 import net.dernevs.updated.datagen.*;
+import net.dernevs.updated.world.ModConfiguredFeatures;
+import net.dernevs.updated.world.ModPlacedFeature;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class UpdatedModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -15,5 +19,12 @@ public class UpdatedModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeGenerator::new);
 		pack.addProvider(ModAdvancementProvider::new);
+		pack.addProvider(ModWorldGenerator::new);
+	}
+
+	@Override
+	public void buildRegistry(RegistryBuilder registryBuilder) {
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeature::bootstrap);
 	}
 }

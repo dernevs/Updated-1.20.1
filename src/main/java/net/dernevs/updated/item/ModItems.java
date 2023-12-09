@@ -97,6 +97,23 @@ public class ModItems {
             new EnderTransporterItem(new FabricItemSettings().maxCount(1).maxDamage(16)));
     public static final Item IRON_PLATES = registerItem("iron_plates",
             new Item(new FabricItemSettings()));
+    public static final Item WHISKEY_GLASS = registerItem("whiskey_glass",
+            new Item(new FabricItemSettings()));
+    public static final Item WINE_GLASS = registerItem("wine_glass",
+            new Item(new FabricItemSettings()));
+    public static final Item FILLED_WHISKEY_GLASS = registerItem("filled_whiskey_glass",
+            new WhiskeyDrinkItem(new FabricItemSettings().food(ModFoodComponents.FILLED_WHISKEY_GLASS).recipeRemainder(ModItems.WHISKEY_GLASS)));
+    public static final Item FILLED_WHITE_WINE_GLASS = registerItem("filled_white_wine_glass",
+            new WineDrinkItem(new FabricItemSettings().food(ModFoodComponents.FILLED_WHITE_WINE_GLASS).recipeRemainder(ModItems.WINE_GLASS)));
+    public static final Item FILLED_RED_WINE_GLASS = registerItem("filled_red_wine_glass",
+            new WineDrinkItem(new FabricItemSettings().food(ModFoodComponents.FILLED_RED_WINE_GLASS).recipeRemainder(ModItems.WINE_GLASS)));
+    public static final Item WHISKEY_BOTTLE = registerItem("whiskey_bottle",
+            new ModDrinkItem(new FabricItemSettings().food(ModFoodComponents.WHISKEY_BOTTLE).recipeRemainder(Items.GLASS_BOTTLE)));
+    public static final Item WHITE_WINE_BOTTLE = registerItem("white_wine_bottle",
+            new ModDrinkItem(new FabricItemSettings().food(ModFoodComponents.WHITE_WINE_BOTTLE).recipeRemainder(Items.GLASS_BOTTLE)));
+    public static final Item RED_WINE_BOTTLE = registerItem("red_wine_bottle",
+            new ModDrinkItem(new FabricItemSettings().food(ModFoodComponents.RED_WINE_BOTTLE).recipeRemainder(Items.GLASS_BOTTLE)));
+    /*
     public static final Item PLATED_IRON_HELMET = registerItem("plated_iron_helmet",
             new ArmorItem(ModArmorMaterial.PLATED_IRON, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item PLATED_IRON_CHESTPLATE = registerItem("plated_iron_chestplate",
@@ -105,6 +122,7 @@ public class ModItems {
             new ArmorItem(ModArmorMaterial.PLATED_IRON, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item PLATED_IRON_BOOTS = registerItem("plated_iron_boots",
             new ArmorItem(ModArmorMaterial.PLATED_IRON, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+     */
     public static final Item ROSE_GOLD_CREWMATE = registerItem("rose_gold_crewmate",
             new Item(new Item.Settings().maxCount(1)));
     private static Item registerItem(String name, Item item) {
