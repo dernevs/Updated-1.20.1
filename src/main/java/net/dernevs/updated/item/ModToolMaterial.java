@@ -22,7 +22,8 @@ public enum ModToolMaterial implements ToolMaterial {
     ANDESITE(MiningLevels.STONE, 250, 3.0f, 1.0f, 5, () -> Ingredient.ofItems(Blocks.ANDESITE)),
     DIORITE(MiningLevels.IRON, 20, 2.0f, 1.0f, 5, () -> Ingredient.ofItems(Blocks.DIORITE)),
     GRANITE(MiningLevels.WOOD, 131, 5.0f, 1.0f, 5, () -> Ingredient.ofItems(Blocks.GRANITE)),
-    TUFF(MiningLevels.STONE, 200, 3.0f, 2f, 9, () -> Ingredient.ofItems(Blocks.TUFF));
+    TUFF(MiningLevels.STONE, 200, 3.0f, 2f, 9, () -> Ingredient.ofItems(Blocks.TUFF)),
+    RITUAL(MiningLevels.NETHERITE, 10000, 10.0f, 6.0f, 69, () -> Ingredient.ofItems(ModItems.ENDER_TRANSPORTER));
 
     private final int miningLevel;
     private final int itemDurability;

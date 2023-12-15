@@ -156,6 +156,7 @@ public class ModItemGroup {
                         entries.add(ModItems.HELLSTONE_AND_NETHERITE);
                         entries.add(ModItems.AMETHYST_SHIELD);
                         entries.add(ModItems.ENDER_TRANSPORTER);
+                        entries.add(ModItems.RITUAL_DAGGER);
 
                     }).build());
 

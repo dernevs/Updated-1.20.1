@@ -113,6 +113,8 @@ public class ModItems {
             new ModDrinkItem(new FabricItemSettings().food(ModFoodComponents.WHITE_WINE_BOTTLE).recipeRemainder(Items.GLASS_BOTTLE)));
     public static final Item RED_WINE_BOTTLE = registerItem("red_wine_bottle",
             new ModDrinkItem(new FabricItemSettings().food(ModFoodComponents.RED_WINE_BOTTLE).recipeRemainder(Items.GLASS_BOTTLE)));
+    public static final Item RITUAL_DAGGER = registerItem("ritual_dagger",
+            new RitualDaggerItem(ModToolMaterial.RITUAL, 9, -2f, new FabricItemSettings().maxCount(1)));
     /*
     public static final Item PLATED_IRON_HELMET = registerItem("plated_iron_helmet",
             new ArmorItem(ModArmorMaterial.PLATED_IRON, ArmorItem.Type.HELMET, new FabricItemSettings()));
