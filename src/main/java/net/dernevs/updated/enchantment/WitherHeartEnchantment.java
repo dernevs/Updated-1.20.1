@@ -13,10 +13,11 @@ public class WitherHeartEnchantment extends Enchantment {
 
     @Override
     public void onUserDamaged(LivingEntity user, Entity attacker, int level) {
-        if (!user.getWorld().isClient && user.getHealth() <= 0.5f) {
+        if (!user.getWorld().isClient && user.getHealth() <= 0.9f) {
             ServerWorld world = ((ServerWorld) user.getWorld());
             BlockPos position = user.getBlockPos();
             EntityType.WITHER.spawn(world, position, SpawnReason.BREEDING);
+            user.kill();
         }
         super.onUserDamaged(user, attacker, level);
     }

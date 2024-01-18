@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 69420,
+  "experience": 1,
+  "group": "rose_gold_crewmate",
+  "ingredient": {
+    "item": "updated:rose_gold_block"
+  },
+  "result": "updated:rose_gold_crewmate"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "diamond_ingot",
+  "ingredient": {
+    "item": "minecraft:diamond"
+  },
+  "result": "updated:diamond_ingot"
+}

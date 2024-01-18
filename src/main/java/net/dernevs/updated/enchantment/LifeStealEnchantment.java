@@ -22,7 +22,6 @@ public class LifeStealEnchantment extends Enchantment {
         int x = random.nextInt(10+1);
         if (!user.getWorld().isClient && x>=7) {
          user.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH,1,0), user);
-         user.kill();
         }
         super.onTargetDamaged(user, target, level);
     }

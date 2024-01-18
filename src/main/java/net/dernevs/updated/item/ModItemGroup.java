@@ -21,7 +21,100 @@ public class ModItemGroup {
                         entries.add(ModItems.ROSE_GOLD_NUGGET);
                         entries.add(ModItems.ROSE_GOLDEN_CARROT);
                         entries.add(ModItems.ROSE_GOLDEN_APPLE);
+
+                        entries.add(ModItems.IRON_PLATES);
+                        entries.add(ModItems.DIAMOND_PLATES);
+                        entries.add(ModItems.DIAMOND_INGOT);
+
+                        entries.add(ModItems.REPAIR_TEMPLATE);
+                        entries.add(ModItems.NETHERITE_HORSE_ARMOR);
+                        entries.add(ModItems.GLASS_VIAL);
+                        entries.add(ModItems.WHISKEY_GLASS);
+                        entries.add(ModItems.FILLED_WHISKEY_GLASS);
+                        entries.add(ModItems.WHISKEY_BOTTLE);
+                        entries.add(ModItems.WINE_GLASS);
+                        entries.add(ModItems.FILLED_RED_WINE_GLASS);
+                        entries.add(ModItems.FILLED_WHITE_WINE_GLASS);
+                        entries.add(ModItems.RED_WINE_BOTTLE);
+                        entries.add(ModItems.WHITE_WINE_BOTTLE);
+                        entries.add(ModItems.ENDER_TRANSPORTER);
+                        entries.add(ModItems.NETHERITE_BUNDLE);
+                        entries.add(ModItems.GOLD_BUNDLE);
+                        entries.add(ModItems.IRON_BUNDLE);
+                        entries.add(ModItems.DIAMOND_BUNDLE);
+
+
+                    }).build());
+    public static final ItemGroup MOD_GROUP2 = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(UpdatedMod.MOD_ID, "mod_group2"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.mod_group2"))
+                    .icon(() -> new ItemStack(Items.CLOCK)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.HEART_GEM);
+                        entries.add(ModItems.CORRUPTED_HEART_GEM);
+                        entries.add(ModBlocks.ALCHEMY_TABLE);
+                        entries.add(ModItems.HELLSTONE_AND_NETHERITE);
+                        entries.add(ModItems.CURRENCY_TEST);
+                        entries.add(ModItems.VOID_SCROLL);
+                        entries.add(ModItems.EMERALD_BUNDLE);
+
+
+                    }).build());
+    public static final ItemGroup MOD_GROUP3 = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(UpdatedMod.MOD_ID, "mod_group3"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.mod_group2"))
+                    .icon(() -> new ItemStack(ModItems.RITUAL_DAGGER)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.RITUAL_DAGGER);
+                        entries.add(ModItems.AMETHYST_SHIELD);
+                        entries.add(ModItems.VENOM_SWORD);
+                        entries.add(ModItems.ANDESITE_SWORD);
+                        entries.add(ModItems.ANDESITE_PICKAXE);
+                        entries.add(ModItems.ANDESITE_AXE);
+                        entries.add(ModItems.ANDESITE_SHOVEL);
+                        entries.add(ModItems.ANDESITE_HOE);
+
+                        entries.add(ModItems.DIORITE_SWORD);
+                        entries.add(ModItems.DIORITE_PICKAXE);
+                        entries.add(ModItems.DIORITE_AXE);
+                        entries.add(ModItems.DIORITE_SHOVEL);
+                        entries.add(ModItems.DIORITE_HOE);
+
+                        entries.add(ModItems.GRANITE_SWORD);
+                        entries.add(ModItems.GRANITE_PICKAXE);
+                        entries.add(ModItems.GRANITE_AXE);
+                        entries.add(ModItems.GRANITE_SHOVEL);
+                        entries.add(ModItems.GRANITE_HOE);
+
+                        entries.add(ModItems.TUFF_SWORD);
+                        entries.add(ModItems.TUFF_PICKAXE);
+                        entries.add(ModItems.TUFF_AXE);
+                        entries.add(ModItems.TUFF_SHOVEL);
+                        entries.add(ModItems.TUFF_HOE);
+
+                        entries.add(ModItems.DAMAGED_SWORD);
+                        entries.add(ModItems.DAMAGED_PICKAXE);
+                        entries.add(ModItems.DAMAGED_AXE);
+                        entries.add(ModItems.DAMAGED_SHOVEL);
+                        entries.add(ModItems.DAMAGED_HOE);
+
+                        entries.add(ModItems.DAMAGED_HELMET);
+                        entries.add(ModItems.DAMAGED_CHESTPLATE);
+                        entries.add(ModItems.DAMAGED_LEGGINGS);
+                        entries.add(ModItems.DAMAGED_BOOTS);
+                        entries.add(ModItems.BOTTLED_LIGHTNING);
+                    }).build());
+    public static final ItemGroup MOD_GROUP4 = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(UpdatedMod.MOD_ID, "mod_group4"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.mod_group2"))
+                    .icon(() -> new ItemStack(ModBlocks.DDO)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.ROSE_GOLD_BLOCK);
+
+                        entries.add(ModBlocks.WRATH_BLOCK);
+                        entries.add(ModBlocks.GREED_BLOCK);
+                        entries.add(ModBlocks.GLUTTONY_BLOCK);
+                        entries.add(ModBlocks.ENVY_BLOCK);
+                        entries.add(ModBlocks.SLOTH_BLOCK);
+                        entries.add(ModBlocks.PRIDE_BLOCK);
+                        entries.add(ModBlocks.LUST_BLOCK);
 
                         entries.add(ModBlocks.CRACKED_STONE_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_STONE_BRICK_SLAB);
@@ -89,75 +182,6 @@ public class ModItemGroup {
                         entries.add(ModBlocks.TLO);
                         entries.add(ModBlocks.TIO);
                         entries.add(ModBlocks.TRO);
-
-                        entries.add(ModItems.ANDESITE_SWORD);
-                        entries.add(ModItems.ANDESITE_PICKAXE);
-                        entries.add(ModItems.ANDESITE_AXE);
-                        entries.add(ModItems.ANDESITE_SHOVEL);
-                        entries.add(ModItems.ANDESITE_HOE);
-
-                        entries.add(ModItems.DIORITE_SWORD);
-                        entries.add(ModItems.DIORITE_PICKAXE);
-                        entries.add(ModItems.DIORITE_AXE);
-                        entries.add(ModItems.DIORITE_SHOVEL);
-                        entries.add(ModItems.DIORITE_HOE);
-
-                        entries.add(ModItems.GRANITE_SWORD);
-                        entries.add(ModItems.GRANITE_PICKAXE);
-                        entries.add(ModItems.GRANITE_AXE);
-                        entries.add(ModItems.GRANITE_SHOVEL);
-                        entries.add(ModItems.GRANITE_HOE);
-
-                        entries.add(ModItems.TUFF_SWORD);
-                        entries.add(ModItems.TUFF_PICKAXE);
-                        entries.add(ModItems.TUFF_AXE);
-                        entries.add(ModItems.TUFF_SHOVEL);
-                        entries.add(ModItems.TUFF_HOE);
-
-                        entries.add(ModItems.DAMAGED_SWORD);
-                        entries.add(ModItems.DAMAGED_PICKAXE);
-                        entries.add(ModItems.DAMAGED_AXE);
-                        entries.add(ModItems.DAMAGED_SHOVEL);
-                        entries.add(ModItems.DAMAGED_HOE);
-
-                        entries.add(ModItems.DAMAGED_HELMET);
-                        entries.add(ModItems.DAMAGED_CHESTPLATE);
-                        entries.add(ModItems.DAMAGED_LEGGINGS);
-                        entries.add(ModItems.DAMAGED_BOOTS);
-                        entries.add(ModItems.IRON_PLATES);
-                        /*
-                        entries.add(ModItems.PLATED_IRON_HELMET);
-                        entries.add(ModItems.PLATED_IRON_CHESTPLATE);
-                        entries.add(ModItems.PLATED_IRON_LEGGINGS);
-                        entries.add(ModItems.PLATED_IRON_BOOTS);
-                         */
-
-                        entries.add(ModItems.VENOM_SWORD);
-                        entries.add(ModItems.REPAIR_TEMPLATE);
-                        entries.add(ModItems.NETHERITE_HORSE_ARMOR);
-                        entries.add(ModItems.GLASS_VILE);
-                        entries.add(ModItems.WHISKEY_GLASS);
-                        entries.add(ModItems.FILLED_WHISKEY_GLASS);
-                        entries.add(ModItems.WHISKEY_BOTTLE);
-                        entries.add(ModItems.WINE_GLASS);
-                        entries.add(ModItems.FILLED_RED_WINE_GLASS);
-                        entries.add(ModItems.FILLED_WHITE_WINE_GLASS);
-                        entries.add(ModItems.RED_WINE_BOTTLE);
-                        entries.add(ModItems.WHITE_WINE_BOTTLE);
-
-                    }).build());
-    public static final ItemGroup MOD_GROUP2 = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(UpdatedMod.MOD_ID, "mod_group2"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.mod_group2"))
-                    .icon(() -> new ItemStack(Items.CLOCK)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.HEART_GEM);
-                        entries.add(ModItems.CORRUPTED_HEART_GEM);
-                        entries.add(ModBlocks.ALCHEMY_TABLE);
-                        entries.add(ModItems.HELLSTONE_AND_NETHERITE);
-                        entries.add(ModItems.AMETHYST_SHIELD);
-                        entries.add(ModItems.ENDER_TRANSPORTER);
-                        entries.add(ModItems.RITUAL_DAGGER);
-
                     }).build());
 
 

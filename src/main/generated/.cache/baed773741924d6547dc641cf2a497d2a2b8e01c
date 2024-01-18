@@ -1,6 +1,1 @@
-// 1.20	2023-12-08T20:19:25.6412597	Updated/Tags for minecraft:block
-061f07fc6f0c6b5ddeec629490169c633a681b16 data\minecraft\tags\blocks\mineable\pickaxe.json
-c3cf9fce289f7fabec4e2ab5f2fe3ab68587346f data\minecraft\tags\blocks\walls.json
-acdbb06c756c41495b16e35b004c5ee345aa309e data\minecraft\tags\blocks\needs_diamond_tool.json
-a8014238a1bbc0a506c59d1ac04cf6d0c0fd47a7 data\minecraft\tags\blocks\needs_iron_tool.json
-a33d29561f17df021b7bc014ccb64a00f492c386 data\minecraft\tags\blocks\needs_stone_tool.json
+// 1.20	2024-01-06T15:33:07.8221098	Updated/Tags for minecraft:block

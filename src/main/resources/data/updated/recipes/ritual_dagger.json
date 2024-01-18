@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "ABA",
+    "CDC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "B": {
+      "item": "minecraft:netherite_block"
+    },
+    "C": {
+      "item": "minecraft:dragon_head"
+    } ,
+    "D": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "updated:ritual_dagger"
+  }
+}

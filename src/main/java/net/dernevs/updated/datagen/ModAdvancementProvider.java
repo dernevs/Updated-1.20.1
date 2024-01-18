@@ -21,22 +21,6 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
 
     @Override
     public void generateAdvancement(Consumer<Advancement> consumer) {
-        Advancement ModRootOV = Advancement.Builder.create()
-                .display(new ItemStack(Blocks.COMMAND_BLOCK),
-                        Text.translatable("ModAdvancement.Text.Root.title"), Text.translatable("ModAdvancement.Text.Root.description"),
-                        new Identifier(UpdatedMod.MOD_ID, "texture/block/rose_gold_block.png"), AdvancementFrame.TASK,
-                        false, false, true)
-                .criterion("has_item", InventoryChangedCriterion.Conditions.items(Blocks.DIRT))
-                .build(consumer, UpdatedMod.MOD_ID + ":modrootov");
-
-        Advancement Why = Advancement.Builder.create()
-                .display(new ItemStack(ModItems.ROSE_GOLD_CREWMATE),
-                        Text.translatable("ModAdvancement.Text.why.title"), Text.translatable("ModAdvancement.Text.why.description"),
-                        new Identifier(UpdatedMod.MOD_ID, "texture/block/rose_gold_block.png"), AdvancementFrame.TASK,
-                        true, true, true)
-                .criterion("has_rose_gold_crewmate", InventoryChangedCriterion.Conditions.items(ModItems.ROSE_GOLD_CREWMATE))
-                .parent(ModRootOV)
-                .build(consumer, UpdatedMod.MOD_ID + ":why");
     }
 
 }

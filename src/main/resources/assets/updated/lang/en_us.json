@@ -38,7 +38,7 @@
   "item.updated.venom_sword": "Venom Sword",
   "item.updated.repair_template": "Repair Template",
   "item.updated.netherite_horse_armor": "Netherite Horse Armor",
-  "item.updated.glass_vile": "Glass Vial",
+  "item.updated.glass_vile": "Glass Vile",
 
 
   "block.updated.rose_gold_block": "Rose Gold Block",
@@ -93,6 +93,14 @@
   "block.updated.cut_sandstone_stairs": "Cut Sandstone Stairs",
   "block.updated.cut_red_sandstone_stairs": "Cut Red Sandstone Stairs",
 
+  "block.updated.wrath_block": "Wrath Block",
+  "block.updated.gluttony_block": "Gluttony Block",
+  "block.updated.greed_block": "Greed Block",
+  "block.updated.sloth_block": "Sloth Block",
+  "block.updated.envy_block": "Envy Block",
+  "block.updated.pride_block": "Pride Block",
+  "block.updated.lust_block": "Lust Block",
+
   "block.updated.stone_wall": "Stone Wall",
   "block.updated.smooth_stone_wall": "Smooth Stone Wall",
   "block.updated.cracked_polish_blackstone_brick_wall": "Cracked Polished Blackstone Brick Wall",
@@ -121,9 +129,21 @@
   "item.updated.red_wine_bottle": "Red Wine Bottle",
   "item.updated.white_wine_bottle": "White Wine Bottle",
   "item.updated.rose_gold_crewmate": "Rose Gold Crewmate",
+  "item.updated.iron_plates": "Iron Plates",
+  "item.updated.diamond_plates": "Diamond Plates",
+  "item.updated.diamond_ingot": "Diamond Ingot",
+  "item.updated.bottled_lightning": "Bottled Lightning",
+  "item.updated.netherite_bundle": "Netherite Bundle",
+  "item.updated.emerald_bundle": "Emerald Bundle",
+  "item.updated.diamond_bundle": "Diamond Bundle",
+  "item.updated.gold_bundle": "Gold Bundle",
+  "item.updated.iron_bundle": "Iron Bundle",
+  "item.updated.ritual_dagger": "Ritual Dagger",
 
-  "itemgroup.mod_group": "Updated Items Blocks And Stuff",
+  "itemgroup.mod_group": "Updated Misc",
   "itemgroup.mod_group2": "Work In Progress",
+  "itemgroup.mod_group3": "Updated Combat",
+  "itemgroup.mod_group4": "Updated Blocks",
 
   "item.updated.heart_gem.max.use": "You have reached the maximum amount of health",
 
@@ -131,6 +151,14 @@
   "enchantment.updated.life_steal": "Life Steal",
   "enchantment.updated.wither_heart": "Wither Heart",
   "enchantment.updated.berserk": "Berserk",
+  "enchantment.updated.the_prophecy": "The Prophecy",
+  "enchantment.updated.envy": "Envy",
+  "enchantment.updated.sloth": "Sloth",
+  "enchantment.updated.gluttony": "Gluttony",
+  "enchantment.updated.greed": "Greed",
+  "enchantment.updated.lust": "Lust",
+  "enchantment.updated.pride": "Pride",
+  "enchantment.updated.wrath": "Wrath",
 
   "ModAdvancement.Text.Root.title": "Welcome To The Mod",
   "ModAdvancement.Text.Root.description": "These Advancements Will Guide You Through The Mod",
@@ -139,6 +167,7 @@
 
   "tooltip.updated.hold_shift" : "Press §eSHIFT§r for more Information",
   "tooltip.updated.corrupted_heart_gem.information": "Currently work in progress",
+  "ritual_dagger.tooltip.killed.entity": "No Player Killed",
   "tooltip.updated.heart_gem.information": "Currently work in progress"
 
 

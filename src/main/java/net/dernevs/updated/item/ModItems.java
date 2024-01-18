@@ -12,7 +12,7 @@ public class ModItems {
     public static final Item ROSE_GOLD_INGOT = registerItem("rose_gold_ingot",
             new Item(new FabricItemSettings()));
 
-    public static final Item GLASS_VILE = registerItem("glass_vile",
+    public static final Item GLASS_VIAL = registerItem("glass_vile",
             new Item(new FabricItemSettings().maxCount(16)));
     public static final Item ROSE_GOLD_NUGGET = registerItem("rose_gold_nugget",
             new Item(new FabricItemSettings()));
@@ -25,7 +25,7 @@ public class ModItems {
     public static final Item HEART_GEM = registerItem("heart_gem",
             new HeartGemItem(new FabricItemSettings()));
     public static final Item CORRUPTED_HEART_GEM = registerItem("corrupted_heart_gem",
-            new CorruptedHeartGemItem(new FabricItemSettings()));
+            new CorruptedHeartGemItem(new FabricItemSettings().maxCount(1)));
     public static final Item ANDESITE_SWORD = registerItem("andesite_sword",
             new SwordItem(ModToolMaterial.ANDESITE, 3, -2.4f, new FabricItemSettings()));
     public static final Item ANDESITE_PICKAXE = registerItem("andesite_pickaxe",
@@ -92,10 +92,14 @@ public class ModItems {
     public static final Item HELLSTONE_AND_NETHERITE = registerItem("hellstone_and_netherite",
             new HellstoneAndNetheriteItem(new FabricItemSettings()));
     public static final Item AMETHYST_SHIELD = registerItem("amethyst_shield",
-            new ShieldItem(new FabricItemSettings().maxDamage(350)));
+            new AmethystShieldItem(new FabricItemSettings().maxDamage(650)));
     public static final Item ENDER_TRANSPORTER = registerItem("ender_transporter",
             new EnderTransporterItem(new FabricItemSettings().maxCount(1).maxDamage(16)));
     public static final Item IRON_PLATES = registerItem("iron_plates",
+            new Item(new FabricItemSettings()));
+    public static final Item DIAMOND_PLATES = registerItem("diamond_plates",
+            new Item(new FabricItemSettings()));
+    public static final Item DIAMOND_INGOT = registerItem("diamond_ingot",
             new Item(new FabricItemSettings()));
     public static final Item WHISKEY_GLASS = registerItem("whiskey_glass",
             new Item(new FabricItemSettings()));
@@ -113,8 +117,25 @@ public class ModItems {
             new ModDrinkItem(new FabricItemSettings().food(ModFoodComponents.WHITE_WINE_BOTTLE).recipeRemainder(Items.GLASS_BOTTLE)));
     public static final Item RED_WINE_BOTTLE = registerItem("red_wine_bottle",
             new ModDrinkItem(new FabricItemSettings().food(ModFoodComponents.RED_WINE_BOTTLE).recipeRemainder(Items.GLASS_BOTTLE)));
+    public static final Item BOTTLED_LIGHTNING = registerItem("bottled_lightning",
+            new BottledLightningItem(new FabricItemSettings().maxCount(16).recipeRemainder(Items.GLASS_BOTTLE)));
+
+    public static final Item CURRENCY_TEST = registerItem("currency_test",
+            new ModCurrencyItem(new FabricItemSettings()));
+    public static final Item VOID_SCROLL = registerItem("void_scroll",
+            new VoidScrollItem(new FabricItemSettings().maxCount(1)));
+    public static final Item NETHERITE_BUNDLE = registerItem("netherite_bundle",
+            new NetheriteBundleItem(new FabricItemSettings().maxCount(16)));
+    public static final Item DIAMOND_BUNDLE = registerItem("diamond_bundle",
+            new DiamondBundleItem(new FabricItemSettings().maxCount(16)));
+    public static final Item EMERALD_BUNDLE = registerItem("emerald_bundle",
+            new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item GOLD_BUNDLE = registerItem("gold_bundle",
+            new GoldBundleItem(new FabricItemSettings().maxCount(16)));
+    public static final Item IRON_BUNDLE = registerItem("iron_bundle",
+            new IronBundleItem(new FabricItemSettings().maxCount(16)));
     public static final Item RITUAL_DAGGER = registerItem("ritual_dagger",
-            new RitualDaggerItem(ModToolMaterial.RITUAL, 9, -2f, new FabricItemSettings().maxCount(1)));
+            new RitualDaggerItem(ModToolMaterial.RITUAL, 6, -2.4f, new FabricItemSettings().maxCount(1)));
     /*
     public static final Item PLATED_IRON_HELMET = registerItem("plated_iron_helmet",
             new ArmorItem(ModArmorMaterial.PLATED_IRON, ArmorItem.Type.HELMET, new FabricItemSettings()));

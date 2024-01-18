@@ -144,8 +144,21 @@ public class ModBlocks {
             new WallBlock(FabricBlockSettings.copyOf(Blocks.GILDED_BLACKSTONE)));
     public static final Block DARK_PRISMARINE_WALL = registerBlock("dark_prismarine_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.DARK_PRISMARINE)));
-    public static final Block CHALLENGE_BLOCK = registerBlock("challenge_block",
-            new ChallengeBlock(FabricBlockSettings.copyOf(Blocks.DIRT).noCollision()));
+    public static final Block WRATH_BLOCK = registerBlock("wrath_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
+    public static final Block SLOTH_BLOCK = registerBlock("sloth_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
+    public static final Block GLUTTONY_BLOCK = registerBlock("gluttony_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
+    public static final Block GREED_BLOCK = registerBlock("greed_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
+    public static final Block ENVY_BLOCK = registerBlock("envy_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
+    public static final Block LUST_BLOCK = registerBlock("lust_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
+    public static final Block PRIDE_BLOCK = registerBlock("pride_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
+
 
     public static final Block ALCHEMY_TABLE = registerBlock("alchemy_table",
             new AlchemyTableBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).nonOpaque()));

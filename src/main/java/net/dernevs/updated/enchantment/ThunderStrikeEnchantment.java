@@ -47,6 +47,11 @@ public class ThunderStrikeEnchantment extends Enchantment {
     }
 
     @Override
+    public boolean isAvailableForEnchantedBookOffer() {
+        return false;
+    }
+
+    @Override
     public int getMaxLevel() {
         return 5;
     }

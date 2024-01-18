@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ACA",
+    "DBD",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_cluster"
+    },
+    "B": {
+      "item": "minecraft:shield"
+    },
+    "C": {
+      "item": "minecraft:medium_amethyst_bud"
+    },
+    "D": {
+      "item": "minecraft:large_amethyst_bud"
+    }
+  },
+  "result": {
+    "item": "updated:amethyst_shield"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "updated:alchemy_table",
+    "updated:wrath_block",
+    "updated:envy_block",
+    "updated:gluttony_block",
+    "updated:greed_block",
+    "updated:sloth_block",
+    "updated:pride_block",
+    "updated:lust_block"
+  ]
+}

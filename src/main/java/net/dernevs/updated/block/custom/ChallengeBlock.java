@@ -15,7 +15,7 @@ public class ChallengeBlock extends Block {
     public ChallengeBlock(Settings settings) {
         super(settings);
     }
-
+/*
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         if (!world.isClient()){
@@ -36,5 +36,7 @@ public class ChallengeBlock extends Block {
         super.onEntityCollision(state, world, pos, entity);
         }
     }
+
+ */
 }
 
