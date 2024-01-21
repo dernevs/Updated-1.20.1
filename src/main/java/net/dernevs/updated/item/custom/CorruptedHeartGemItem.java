@@ -5,12 +5,14 @@ import com.google.common.collect.Multimap;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -28,13 +30,16 @@ public class CorruptedHeartGemItem extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
+        /*
         Multimap<EntityAttribute, EntityAttributeModifier> attributes;
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
         builder.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier("Element modifier", -2, EntityAttributeModifier.Operation.ADDITION));
         attributes = builder.build();
         user.getAttributes().addTemporaryModifiers(attributes);
-        user.heal(-2);
-        user.getStackInHand(hand).decrement(1);
+         */
+            user.heal(-2);
+            user.getStackInHand(hand).decrement(1);
+
 
         return TypedActionResult.success(itemStack, world.isClient());
     }

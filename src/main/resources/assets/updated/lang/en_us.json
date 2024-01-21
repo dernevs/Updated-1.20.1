@@ -168,7 +168,7 @@
   "tooltip.updated.hold_shift" : "Press §eSHIFT§r for more Information",
   "tooltip.updated.corrupted_heart_gem.information": "Currently work in progress",
   "ritual_dagger.tooltip.killed.entity": "No Player Killed",
-  "tooltip.updated.heart_gem.information": "Currently work in progress"
+  "tooltip.updated.heart_gem.information": "Currently work in progress",
 
-
+  "effect.updated.tipsy": "Tipsy"
 }
